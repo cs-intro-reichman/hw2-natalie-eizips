@@ -9,7 +9,6 @@ public class Collatz {
 		if (mode == 'v'){
 			System.out.println("1 4 2 1 (4)");
 		}
-
 		for (int i = 2; i <= num; i++){	
 			term = i;
 			count = 1;
