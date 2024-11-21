@@ -4,6 +4,7 @@ public class Collatz {
 	    int num = Integer.parseInt(args[0]);
 		char mode = args[1].charAt(0);
 		int term;
+		int count;
 
 		if (mode == 'v'){
 			System.out.println("1 4 2 1 (1)");
@@ -11,6 +12,7 @@ public class Collatz {
 
 		for (int i = 2; i <= num; i++){	
 			term = i;
+			count = 1;
 			while(term != 1){
 				if (mode == 'v'){
 					System.out.print(term + " ");
@@ -21,9 +23,10 @@ public class Collatz {
 				else {
 					term = (3 * term) + 1;
 				}
+				count ++;
 			}
 			if (mode == 'v'){
-				System.out.println("1 (" + i + ")");
+				System.out.println("1 (" + count + ")");
 			}
 		}
 		System.out.println("Every one of the first " + num + " hailstone sequences reached 1.");
