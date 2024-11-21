@@ -8,12 +8,12 @@ public class Cheers {
             for (int i = 0; i < word.length(); i++) {
                 System.out.print("Give me a");
                 if (letters.indexOf(word.charAt(i)) == -1){
-                        System.out.print(" ");
+                        System.out.print("  ");
                 }
                 else {
-                        System.out.print("n");
+                        System.out.print("n ");
                 } 
-                System.out.print(": ");
+                System.out.print(word.charAt(i) + ": ");
                 System.out.println(word.charAt(i) + "!");
             }
 
